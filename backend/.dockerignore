@@ -1,0 +1,7 @@
+# Ignore local venv and DB when the backend image is built.
+__pycache__
+*.pyc
+.venv
+roamly.db
+.env
+.env.local
