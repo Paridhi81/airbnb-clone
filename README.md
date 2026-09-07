@@ -32,10 +32,12 @@ A full-stack Airbnb-style stay marketplace built with **Next.js 15, TypeScript, 
 
 ## System Architecture
 
+## System Architecture
+
 ```mermaid
 flowchart TD
-    A[Next.js Frontend<br/>Render] -->|/api/* rewrite proxy| B[FastAPI Backend<br/>Render]
-    B --> C[(SQLite Database)]
+    A["Next.js Frontend - Render"] -->|REST API| B["FastAPI Backend - Render"]
+    B --> C[("SQLite Database")]
 ```
 
 The frontend does not communicate with SQLite directly.
